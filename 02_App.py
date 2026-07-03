@@ -7,3 +7,5 @@ Created on Thu Jul  2 22:20:43 2026
 
 #CONECTANDO STREAMLIT:
 import streamlit as st 
+st.title("Proyecto Fundamentals")
+st.sidebar("Parámetros")
