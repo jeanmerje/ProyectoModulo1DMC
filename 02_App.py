@@ -9,3 +9,5 @@ Created on Thu Jul  2 22:20:43 2026
 import streamlit as st 
 st.title("Proyecto Fundamentals")
 st.sidebar.title("Parámetros")
+
+valor_inicial=st.number_input("Ingrese el valor inicial")
