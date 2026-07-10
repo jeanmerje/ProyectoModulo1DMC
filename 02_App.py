@@ -26,6 +26,6 @@ if modulo=="Listas":
   st.write(lista_numerica)
 elif modulo=="Arrays":
   st.write("Estas en el modulo de arreglos")
-else 
+else: 
   st.write("Estas en el modulo de funciones")
                             
