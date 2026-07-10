@@ -8,6 +8,7 @@ Created on Thu Jul  2 22:20:43 2026
 #CONECTANDO STREAMLIT:
 #Insertando librerias:
 import streamlit as st
+import numpy as np
 #Insertando textos iniciales:
 st.title("Proyecto Fundamentals")
 st.sidebar.title("Parámetros")
@@ -25,7 +26,13 @@ if modulo=="Listas":
   lista_numerica=list(range(valor_inicial,valor_final))
   st.write(lista_numerica)
 elif modulo=="Arrays":
-  st.write("Estas en el modulo de arreglos")
+  #st.write("Estas en el modulo de arreglos")
+  #Insertando algunos texbox
+  limite_inferior=st.number_input("Ingrese el limite inferior",value=0)
+  limite_superior=st.number_input("Ingrese el limite superior",value=1)
+  cantidad_datos=st.number_input("Ingrese el número de datos a crear",value=10)
+  datos_produccion=np.random.randint(limite_inferior,limite_superior,cantidad_datos)
+  st.write(datos_produccion)
 else: 
   st.write("Estas en el modulo de funciones")
                             
