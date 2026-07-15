@@ -6,6 +6,8 @@ Created on Thu Jul  2 22:20:43 2026
 """
 
 #CONECTANDO STREAMLIT:
+#Sesion
+st.session_state
 #Insertando librerias:
 import streamlit as st
 import numpy as np
